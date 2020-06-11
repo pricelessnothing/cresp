@@ -1,0 +1,12 @@
+setup.py
+cresp/__init__.py
+cresp/cresp.py
+cresp/static/README.txt
+cresp/static/html/cresp.html
+cresp/static/js/src/cresp.js
+cresp_xblock.egg-info/PKG-INFO
+cresp_xblock.egg-info/SOURCES.txt
+cresp_xblock.egg-info/dependency_links.txt
+cresp_xblock.egg-info/entry_points.txt
+cresp_xblock.egg-info/requires.txt
+cresp_xblock.egg-info/top_level.txt

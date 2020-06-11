@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --card-width: 150px;
+    --card-height: 70px;
+    --card-margin: 0 15px;
+    --clr-light: #ffd;
+    --clr-dark: #ffc;
+    --clr-stroke: #999;
+}
+
+.card-row {
+    display: flex;
+    padding: 20px;
+    padding-bottom: 0;
+    background-color: var(--clr-dark);
+    min-height: calc(40px + var(--card-height));
+    justify-content: start;
+    overflow-x: auto;
+    box-sizing: content-box;
+    box-shadow: 5px -10px 30px #feb inset;
+}
+
+.card {
+    width: var(--card-width);
+    min-width: var(--card-width);
+    height: var(--card-height);
+    margin: var(--card-margin);
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #444;
+    border: 2px solid var(--clr-stroke);
+    background-color: var(--clr-light);
+    border-radius: 20px;
+    cursor: grab;
+    user-select: none;
+    box-shadow: 5px 10px 20px #feb;
+}
+
+.card img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background-color: var(--clr-dark);
+    padding: 20px;
+    color: #444;
+}
+
+.table-header {
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    font-weight: bold;
+    margin-left: calc(var(--card-width) + 30px);
+}
+
+.table-header > div {
+    width: var(--card-width);
+    min-width: var(--card-width);
+    padding: 15px 0;
+    margin: var(--card-margin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-row {
+    display: flex;
+    padding: 15px;
+}
+
+.row-name {
+    min-width: 150px;
+    max-width: var(--card-width);
+    height: var(--card-height);
+    margin: var(--card-margin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+.slot {
+    width: var(--card-width);
+    min-width: var(--card-width);
+    height: var(--card-height);
+    margin: var(--card-margin);
+    border-radius: 20px;
+    border: 5px dashed var(--clr-stroke);
+}
+
+.slot-content {
+    margin: -5px -20px
+}
+
+.slot-content .card {
+    box-shadow: none;
+}
+
+.slot-content.correct .card {
+    background-color: lightgreen;
+    color: #444
+}
