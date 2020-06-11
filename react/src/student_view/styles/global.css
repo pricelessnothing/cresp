@@ -31,7 +31,7 @@
     min-width: var(--card-width);
     height: var(--card-height);
     margin: var(--card-margin);
-    padding: 15px;
+    padding: 1px;
     display: flex;
     text-align: center;
     justify-content: center;
